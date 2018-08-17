@@ -25,7 +25,7 @@ def send_msg():
         t = Timer(86400, send_msg)  # Timer（定时器）是 Thread 的派生类，用于在指定时间后调用一个方法。
         t.start()
     except BaseException:
-        my_friend = bot.friends().search(u'brucepk')[
+        my_friend = bot.friends().search(u'兮')[
             0]  # 发送不成功，则发送消息给自己，提醒消息发送失败
         my_friend.send(u'消息发送失败')
 
